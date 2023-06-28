@@ -19,17 +19,6 @@ class BlogController extends Controller
         ]);
     }
 
-    public function hello()
-    {
-        $items = Blog::all();
-        $recents = Blog::latest()->paginate(5);
-
-        return view('pages.hello-blog', [
-            'items' => $items,
-            'recents' => $recents,
-        ]);
-    }
-
     public function search(Request $request)
     {
         if ($request->has('search'))

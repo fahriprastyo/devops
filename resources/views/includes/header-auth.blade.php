@@ -10,11 +10,11 @@
                     </div>
                     <div class="phone-service">
                         <i class="fa fa-phone"></i>
-                        (021) 7863191
+                        (+62) 851 5657 6824
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="{{route('home')}}" class="login-panel"
+                    <a href="{{url('/')}}" class="login-panel"
                         ><i class="fa fa-home"></i>Home</a
                     >
                     <div class="lan-selector">
@@ -59,7 +59,7 @@
                       </div>
                 </div>
                 <div class="ht-right">
-                    <a href="{{route('home')}}" class="login-panel"
+                    <a href="{{url('/')}}" class="login-panel"
                         ><i class="fa fa-home"></i>Home</a
                     >
                     <div class="lan-selector">

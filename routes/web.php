@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // WEB STORE
-Route::get('/', 'App\Http\Controllers\HelloController@index')->name('hello');
-Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/shopping/search', 'App\Http\Controllers\HomeController@search')->name('search');
 Route::get('/shopping', 'App\Http\Controllers\ShoppingController@index')->name('shopping');
 Route::get('/collection', 'App\Http\Controllers\CollectionController@index')->name('collection');
@@ -31,9 +30,6 @@ Route::get('/faq', 'App\Http\Controllers\FaqController@index')->name('faq');
 Route::get('/about', 'App\Http\Controllers\AboutController@index')->name('about');
 Route::get('/blog', 'App\Http\Controllers\BlogController@index')->name('blog');
 Route::get('/blog-details/{id}', 'App\Http\Controllers\BlogDetailsController@index')->name('blog-details');
-
-Route::get('/hello-blog', 'App\Http\Controllers\BlogController@hello')->name('hello-blog');
-Route::get('/hello-details/{id}', 'App\Http\Controllers\BlogDetailsController@hello')->name('hello-details');
 
 Route::get('/contact', 'App\Http\Controllers\ContactController@index')->name('contact');
 Route::get('/success', 'App\Http\Controllers\SuccessController@index')->name('success');

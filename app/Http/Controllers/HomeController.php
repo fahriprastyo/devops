@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Blog;
 use App\Models\Product;
 use App\Models\ProductGallery;
 
@@ -18,9 +19,11 @@ class HomeController extends Controller
     public function index()
     {
         $items = ProductGallery::with('product')->where('is_default', 1)->get();
+        $recents = Blog::latest()->paginate(3);
 
         return view('pages.home')->with([
-            'items' => $items
+            'items' => $items,
+            'recents' => $recents,
         ]);
     }
 

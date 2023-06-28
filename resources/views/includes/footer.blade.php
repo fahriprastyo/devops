@@ -31,6 +31,7 @@
             <li><a href="{{url('about')}}">About Us</a></li>
             <li><a href="{{url('contact')}}">Contact</a></li>
             <li><a href="{{url('collection')}}">Collection</a></li>
+            <li><a href="{{url('blog')}}">Blog</a></li>
             <li><a href="{{url('faq')}}">Faq</a></li>
           </ul>
         </div>

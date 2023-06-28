@@ -30,7 +30,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="breadcrumb-text">
-          <a href="{{url('/home')}}"><i class="fa fa-home"></i> Home</a>
+          <a href="{{url('/')}}"><i class="fa fa-home"></i> Home</a>
           <span>Shop</span>
         </div>
       </div>

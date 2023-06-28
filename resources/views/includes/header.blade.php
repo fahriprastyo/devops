@@ -66,7 +66,7 @@
                 <div class="container">
                     <nav class="nav-menu mobile-menu d-flex justify-content-around">
                         <ul>
-                            <li class="@yield('home')"><a href="{{url('/home')}}">Home</a></li>
+                            <li class="@yield('home')"><a href="{{url('/')}}">Home</a></li>
                             <li class="@yield('shopping')"><a href="{{url('shopping')}}">Shop</a></li>
                             <li class="@yield('collection')"><a href="{{url('collection')}}">Collection</a></li>
                             <li class="@yield('blog')"><a href="{{url('blog')}}">Blog</a></li>
@@ -146,7 +146,7 @@
                     <div class="advanced-search">
                       <div class="input-group">
                         <form action="shopping" class="form-inline" method="GET">
-                            <input  type="text" placeholder="Nama produk?" />
+                            <input type="text" placeholder="Nama produk?" />
                             <button type="submit"><i class="ti-search"></i></button>
                         </form>
                       </div>
@@ -219,7 +219,7 @@
               <div class="container">
                   <nav class="nav-menu mobile-menu d-flex justify-content-around">
                       <ul>
-                          <li class="@yield('home')"><a href="{{url('/home')}}">Home</a></li>
+                          <li class="@yield('home')"><a href="{{url('/')}}">Home</a></li>
                           <li class="@yield('shopping')"><a href="{{url('shopping')}}">Shop</a></li>
                           <li class="@yield('collection')"><a href="{{url('collection')}}">Collection</a></li>
                           <li class="@yield('blog')"><a href="{{url('blog')}}">Blog</a></li>

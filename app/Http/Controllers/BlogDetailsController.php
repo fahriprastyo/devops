@@ -20,17 +20,6 @@ class BlogDetailsController extends Controller
         ]);
     }
 
-    public function hello(Request $request, $id)
-    {
-        $items = Blog::all()->where('slug', $id)->firstOrFail();
-        $recents = Blog::latest()->paginate(5);
-
-        return view('pages.hello-details', [
-            'items' => $items,
-            'recents' => $recents,
-        ]);
-    }
-
     public function search(Request $request)
     {
         if ($request->has('search'))
